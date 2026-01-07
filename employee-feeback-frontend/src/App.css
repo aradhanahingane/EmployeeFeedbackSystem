@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+a {
+  color: #3c5a99;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.login {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+
+.login__card {
+  width: 360px;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  padding: 24px 28px 20px;
+}
+
+.login__title {
+  margin: 0 0 18px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #444;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.login__input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  font-size: 15px;
+  outline: none;
+  background: white;
+}
+
+.login__input:focus {
+  border-color: #9aa7b8;
+  box-shadow: 0 0 0 2px rgba(60, 90, 153, 0.15);
+}
+
+.login__button {
+  padding: 12px;
+  background: linear-gradient(#ededed, #d8d8d8);
+  border: 1px solid #c1c1c1;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+}
+
+.login__button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.login__footer {
+  margin: 14px 0 0;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
+
+.home {
+  max-width: 640px;
+  margin: 32px auto;
+  padding: 0 16px 32px;
+}
+
+.home__title {
+  text-align: center;
+  margin: 0 0 18px;
+}
+
+.home__form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.home__input,
+.home__textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #c8c8c8;
+  border-radius: 4px;
+  font-size: 15px;
+}
+
+.home__textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.home__add {
+  align-self: flex-start;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  background: #3c5a99;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.home__add:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.home__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.home__item {
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  padding: 10px 12px;
+  background: white;
+}
+
+.home__item h3 {
+  margin: 0 0 6px;
+}
+
+.home__item p {
+  margin: 0;
+  color: #555;
+}
+
+.home__empty {
+  color: #777;
+  text-align: center;
+  padding: 12px;
+}
+
