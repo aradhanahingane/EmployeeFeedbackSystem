@@ -7,7 +7,7 @@ const authRoutes = require('./routes/auth')
 const feedbackRoutes = require('./routes/feedback')
 
 const PORT = process.env.PORT || 3000
-const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost:27017/login'
+const MONGO_URL = process.env.MONGO_URL || 'mongodb://localhost:27017/login'  // paste your mongo URL string or use it on local
 
 // Connect to MongoDB
 mongoose
